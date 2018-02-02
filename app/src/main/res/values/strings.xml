@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CATAT!</string>
+    <string-array name="tag_note">
+        <item>Uncategorized</item>
+        <item>Privacy</item>
+        <item>Family affair</item>
+        <item>Study</item>
+        <item>Work</item>
+    </string-array>
+    <string-array name="value_alarm">
+        <item>None</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+    </string-array>
+</resources>

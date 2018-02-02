@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.notes.MainActivity">
+
+    <item
+        android:id="@+id/action_about"
+        android:title="About"
+        android:icon="@drawable/ic_book_24dp"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/action_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home_white_24dp"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/action_work"
+        android:title="Work"
+        />
+
+    <item
+        android:id="@+id/action_family_affair"
+        android:title="Family Affair"
+        />
+
+    <item
+        android:id="@+id/action_study"
+        android:title="Study"
+        />
+
+</menu>

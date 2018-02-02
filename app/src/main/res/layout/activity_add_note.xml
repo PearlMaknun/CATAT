@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edt_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Title"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edt_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Location"
+                android:inputType="text"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="3dp"
+                android:text="Category"
+                android:textSize="8pt"/>
+
+            <Spinner
+                android:id="@+id/tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="3dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_datetime"
+            android:src="@drawable/ic_access_alarms__24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            />
+
+        <EditText
+            android:id="@+id/edt_datetime"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edt_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="100"
+            android:hint="Content"
+            android:inputType="textMultiLine"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="3dp"
+            android:text="Reminder"
+            android:textSize="8pt"/>
+
+        <Spinner
+            android:id="@+id/reminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="3dp"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
