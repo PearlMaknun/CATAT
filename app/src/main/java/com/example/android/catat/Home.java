@@ -26,8 +26,8 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
         myDb = new DatabaseHelper(this);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -160,6 +160,10 @@ public class Home extends AppCompatActivity {
                     //onClick di list
                     listView.setOnItemClickListener(selectData);
                 }
+                return true;
+            case R.id.action_about:
+                Intent intent = new Intent(Home.this, Tentang.class);
+                startActivity(intent);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
