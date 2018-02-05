@@ -189,6 +189,7 @@ public class EditNote extends AppCompatActivity {
     public void updateDateTime(){
         setTanggalJam = formatDate.format(dateTime.getTime());
         setTanggalJam = setTanggalJam + " " + formatTime.format(dateTime.getTime());
+        ValueAlarm = setTanggalJam;
         tgl_acara.setText(setTanggalJam);
     }
 
